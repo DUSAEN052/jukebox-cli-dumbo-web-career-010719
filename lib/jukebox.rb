@@ -33,8 +33,7 @@ def play(songs)
 
   if user_input.to_i.is_a?(Numeric) and user_input.to_i <= songs.length and user_input.to_i >= 0
     puts "Playing #{songs[user_input.to_i - 1]}"
-  elsif user_input.in?(songs)
-    puts "AAAAAAAAAAAA"
+  elsif user_input.to_s.in?(songs)
     puts "Playing #{songs[songs.index(user_input)]}"
   else
     puts "Invalid input, please try again"
