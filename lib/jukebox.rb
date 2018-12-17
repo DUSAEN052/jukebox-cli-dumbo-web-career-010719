@@ -31,7 +31,8 @@ def play(songs)
   puts "Please endet a song name or number"
   user_input = gets.chomp
   
-  if user_input.is_a?(Numeric)
-    
+  if user_input.is_a?(Numeric) and user_input <= songs.length and user_input >= 0
+    puts "Playing #{songs[user_input - 1]}"
+  elsif user_input.is_a(String) and songs
   end
 end
