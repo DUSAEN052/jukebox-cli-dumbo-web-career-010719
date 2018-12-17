@@ -30,7 +30,7 @@ end
 def play(songs)
   puts "Please enter a song name or number"
   user_input = gets.chomp
-  if user_input.to_s.in?(songs)
+  if user_input.to_s.include?(songs)
     puts "Playing #{songs[songs.index(user_input)]}"
   elsif user_input.to_i.is_a?(Numeric) and user_input.to_i <= songs.length and user_input.to_i >= 0
     puts "Playing #{songs[user_input.to_i - 1]}"
