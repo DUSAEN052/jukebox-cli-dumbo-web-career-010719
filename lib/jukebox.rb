@@ -34,6 +34,8 @@ def play(songs)
   if user_input.is_a?(Numeric) and user_input <= songs.length and user_input >= 0
     puts "Playing #{songs[user_input - 1]}"
   elsif user_input.is_a(String) and songs.include?(user_input)
-    puts "Playing #{songs[]}"
+    puts "Playing #{songs[songs.index(user_input)]}"
+  else
+    
   end
 end
