@@ -36,6 +36,7 @@ def play(songs)
   elsif user_input.to_s.in?(songs)
     puts "Playing #{songs[songs.index(user_input)]}"
   else
+    puts "#{user_input}"
     puts "Invalid input, please try again"
   end
 end
