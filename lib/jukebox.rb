@@ -33,11 +33,12 @@ def play(songs)
   
   if songs.include?(user_input.to_s)
     puts "Playing #{songs[songs.index(user_input)]}"
+    return
   elsif user_input.to_i.is_a?(Numeric) and user_input.to_i <= songs.length and user_input.to_i >= 0
     puts "Playing #{songs[user_input.to_i - 1]}"
-  else
-    puts "Invalid input, please try again"
+    return
   end
+  puts "Invalid input, please try again"
 
 end
 
