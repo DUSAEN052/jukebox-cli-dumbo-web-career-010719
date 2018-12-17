@@ -36,6 +36,10 @@ def play(songs)
   elsif user_input.is_a(String) and songs.include?(user_input)
     puts "Playing #{songs[songs.index(user_input)]}"
   else
-    
+    puts "Invalid input, please try again"
   end
+end
+
+def exit_jukebox
+  puts "Goodbye"
 end
