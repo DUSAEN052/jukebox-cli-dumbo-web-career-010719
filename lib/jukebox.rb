@@ -55,9 +55,9 @@ def run
     if input == "help"
       help
     elsif input == "play"
-      play
+      play(songs)
     elsif input == "list"
-      list
+      list(songs)
     elsif input == "exit"
       exit_jukebox
       break
