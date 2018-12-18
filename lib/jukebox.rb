@@ -47,10 +47,10 @@ end
 
 def run
   help
-  puts "Please enter a command:"
   status = true
   
   while status
+    puts "Please enter a command:"
     input = get.chomp
     
     if input == "help"
