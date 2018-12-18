@@ -50,7 +50,7 @@ def run
   
   while true
     puts "Please enter a command:"
-    input = get.chomp
+    input = gets.chomp
     
     if input == "help"
       help
@@ -66,5 +66,4 @@ def run
 
 end
   
-run  
 
