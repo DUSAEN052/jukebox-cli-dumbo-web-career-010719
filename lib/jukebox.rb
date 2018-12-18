@@ -47,9 +47,8 @@ end
 
 def run
   help
-  status = true
   
-  while status
+  while true
     puts "Please enter a command:"
     input = get.chomp
     
@@ -61,7 +60,7 @@ def run
       list
     elsif input == "exit"
       exit_jukebox
-      status = false
+      break
     end
   end
 
